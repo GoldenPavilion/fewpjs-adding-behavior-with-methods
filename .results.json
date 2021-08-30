@@ -2,30 +2,27 @@
   "stats": {
     "suites": 3,
     "tests": 7,
-    "passes": 3,
+    "passes": 6,
     "pending": 0,
-    "failures": 4,
-    "start": "2021-08-30T23:19:31.445Z",
-    "end": "2021-08-30T23:19:36.226Z",
-    "duration": 4781
+    "failures": 1,
+    "start": "2021-08-30T23:26:04.416Z",
+    "end": "2021-08-30T23:26:08.317Z",
+    "duration": 3901
   },
   "tests": [
     {
       "title": "has a class of cat",
       "fullTitle": "cat has a class of cat",
-      "duration": 3,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "cat.speak() returns '[name]' says meow!",
       "fullTitle": "cat cat.speak() returns '[name]' says meow!",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: cat.speak is not a function\n    at Context.<anonymous> (test/indexTest.js:12:16)\n    at processImmediate (node:internal/timers:463:21)",
-        "message": "cat.speak is not a function"
-      }
+      "err": {}
     },
     {
       "title": "has a class of dog",
@@ -37,17 +34,14 @@
     {
       "title": "dog.speak() returns '[name] says woof!'",
       "fullTitle": "dog dog.speak() returns '[name] says woof!'",
-      "duration": 1,
+      "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: dog.speak is not a function\n    at Context.<anonymous> (test/indexTest.js:24:16)\n    at processImmediate (node:internal/timers:463:21)",
-        "message": "dog.speak is not a function"
-      }
+      "err": {}
     },
     {
       "title": "has a class of Bird",
       "fullTitle": "bird has a class of Bird",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -56,62 +50,35 @@
       "fullTitle": "bird bird.speak() returns 'It's me! [name], the parrot!'",
       "duration": 0,
       "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: bird.speak is not a function\n    at Context.<anonymous> (test/indexTest.js:37:17)\n    at processImmediate (node:internal/timers:463:21)",
-        "message": "bird.speak is not a function"
-      }
+      "err": {}
     },
     {
       "title": "bird2.speak() returns 'Squawk!'",
       "fullTitle": "bird bird2.speak() returns 'Squawk!'",
-      "duration": 0,
+      "duration": 3,
       "currentRetry": 0,
       "err": {
-        "stack": "TypeError: bird2.speak is not a function\n    at Context.<anonymous> (test/indexTest.js:40:18)\n    at processImmediate (node:internal/timers:463:21)",
-        "message": "bird2.speak is not a function"
+        "message": "expected 'It\\'s me! Mable, the parrot!' to equal 'Mable says squawk!'",
+        "showDiff": true,
+        "actual": "It's me! Mable, the parrot!",
+        "expected": "Mable says squawk!",
+        "stack": "AssertionError: expected 'It\\'s me! Mable, the parrot!' to equal 'Mable says squawk!'\n    at Context.<anonymous> (test/indexTest.js:40:30)\n    at processImmediate (node:internal/timers:463:21)"
       }
     }
   ],
   "pending": [],
   "failures": [
     {
-      "title": "cat.speak() returns '[name]' says meow!",
-      "fullTitle": "cat cat.speak() returns '[name]' says meow!",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: cat.speak is not a function\n    at Context.<anonymous> (test/indexTest.js:12:16)\n    at processImmediate (node:internal/timers:463:21)",
-        "message": "cat.speak is not a function"
-      }
-    },
-    {
-      "title": "dog.speak() returns '[name] says woof!'",
-      "fullTitle": "dog dog.speak() returns '[name] says woof!'",
-      "duration": 1,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: dog.speak is not a function\n    at Context.<anonymous> (test/indexTest.js:24:16)\n    at processImmediate (node:internal/timers:463:21)",
-        "message": "dog.speak is not a function"
-      }
-    },
-    {
-      "title": "bird.speak() returns 'It's me! [name], the parrot!'",
-      "fullTitle": "bird bird.speak() returns 'It's me! [name], the parrot!'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {
-        "stack": "TypeError: bird.speak is not a function\n    at Context.<anonymous> (test/indexTest.js:37:17)\n    at processImmediate (node:internal/timers:463:21)",
-        "message": "bird.speak is not a function"
-      }
-    },
-    {
       "title": "bird2.speak() returns 'Squawk!'",
       "fullTitle": "bird bird2.speak() returns 'Squawk!'",
-      "duration": 0,
+      "duration": 3,
       "currentRetry": 0,
       "err": {
-        "stack": "TypeError: bird2.speak is not a function\n    at Context.<anonymous> (test/indexTest.js:40:18)\n    at processImmediate (node:internal/timers:463:21)",
-        "message": "bird2.speak is not a function"
+        "message": "expected 'It\\'s me! Mable, the parrot!' to equal 'Mable says squawk!'",
+        "showDiff": true,
+        "actual": "It's me! Mable, the parrot!",
+        "expected": "Mable says squawk!",
+        "stack": "AssertionError: expected 'It\\'s me! Mable, the parrot!' to equal 'Mable says squawk!'\n    at Context.<anonymous> (test/indexTest.js:40:30)\n    at processImmediate (node:internal/timers:463:21)"
       }
     }
   ],
@@ -119,7 +86,14 @@
     {
       "title": "has a class of cat",
       "fullTitle": "cat has a class of cat",
-      "duration": 3,
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "cat.speak() returns '[name]' says meow!",
+      "fullTitle": "cat cat.speak() returns '[name]' says meow!",
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
@@ -131,8 +105,22 @@
       "err": {}
     },
     {
+      "title": "dog.speak() returns '[name] says woof!'",
+      "fullTitle": "dog dog.speak() returns '[name] says woof!'",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
       "title": "has a class of Bird",
       "fullTitle": "bird has a class of Bird",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "bird.speak() returns 'It's me! [name], the parrot!'",
+      "fullTitle": "bird bird.speak() returns 'It's me! [name], the parrot!'",
       "duration": 0,
       "currentRetry": 0,
       "err": {}
